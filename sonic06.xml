@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Sonic '06 </Name>
+  <Screens>
+    <Screen>
+      <Name>Game</Name>
+      <Geometry>
+        <Width>1920</Width>
+        <Height>1080</Height>
+      </Geometry>
+      <WatchZones>
+        <WatchZone>
+          <Name>load</Name>
+          <Geometry>
+            <Width>160</Width>
+            <Height>30</Height>
+            <X>60</X>
+            <Y>120</Y>
+          </Geometry>
+          <Watches>
+            <Watcher>
+              <Name>blackbox</Name>
+              <ErrorMetric>MeanAbsolute</ErrorMetric>
+              <Equalize>false</Equalize>
+              <WatchImages>
+                <WatchImage>
+                  <FilePath>black.png</FilePath>
+                </WatchImage>
+              </WatchImages>
+            </Watcher>
+          </Watches>
+        </WatchZone>
+        <WatchZone>
+          <Name>medal</Name>
+          <Geometry>
+            <Width>150</Width>
+            <Height>150</Height>
+            <X>900</X>
+            <Y>600</Y>
+          </Geometry>
+          <Watches>
+            <Watcher>
+              <Name>goldbox</Name>
+              <ErrorMetric>MeanAbsolute</ErrorMetric>
+              <Equalize>false</Equalize>
+              <WatchImages>
+                <WatchImage>
+                  <FilePath>gold.png</FilePath>
+                </WatchImage>
+              </WatchImages>
+            </Watcher>
+          </Watches>
+        </WatchZone>
+      </WatchZones>
+    </Screen>
+  </Screens>
+</GameProfile>
